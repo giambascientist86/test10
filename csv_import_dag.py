@@ -23,8 +23,8 @@ with DAG('pandas_read_csv_dag', default_args= DAG_DEFAULT_ARGS, schedule_interva
 
     read_csv_task = PythonOperator(
         task_id='read_csv',
-        python_callable= retrieve_movie_df(CSV_PATH),
-        # op_kwargs={'filepath': CSV_PATH},
+        python_callable= retrieve_movie_df,
+        op_kwargs={'filepath': CSV_PATH},
         dag=dag
         )
     read_csv_task
