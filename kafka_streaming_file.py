@@ -10,7 +10,7 @@ from kafka import KafkaProducer
 
 # Constants and configuration
 
-KAFKA_BOOTSTRAP_SERVERS = ['kafka1:9092', 'kafka2:9093','kafka3:9094']
+KAFKA_BOOTSTRAP_SERVERS = ['kafka1:29092', 'kafka2:29093','kafka3:29094']
 KAFKA_TOPIC = "movies_rec"  
 PAUSE_INTERVAL = 10  
 STREAMING_DURATION = 120
